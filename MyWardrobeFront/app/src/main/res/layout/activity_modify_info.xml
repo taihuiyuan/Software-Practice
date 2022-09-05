@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#a6d8d4"
+        >
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/back_white">
+        </Button>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="修改邮箱"
+                android:textAlignment="center"
+                android:paddingTop="10dp"
+                android:textSize="20dp"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/originalEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:text="原邮箱:"
+        android:textSize="18dp">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="新邮箱:"
+            android:textSize="18dp">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right" >
+            <EditText
+                android:id="@+id/etModifyEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入新邮箱"
+                android:inputType="textEmailAddress"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnModifyInfoSubmit"
+        android:background="@drawable/bg_btn"
+        android:text="保存"
+        android:layout_gravity="center"
+        />
+
+
+
+</LinearLayout>

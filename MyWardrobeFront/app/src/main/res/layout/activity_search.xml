@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.SearchActivity"
+
+    >
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:layout_height="45dp">
+
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:id="@+id/svClothes"
+            android:imeOptions="actionSearch"
+            android:queryHint="分类/位置/颜色/季节/备注"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@color/white"
+            android:text="取消"
+            android:textColor="#515151">
+
+        </Button>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.MineActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="未登录"
+            android:textAlignment="center"
+            android:paddingTop="10dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:textColor="#a6d8d4"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="欢迎来到 My Wardrobe"
+            android:textAlignment="center"
+            android:paddingTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="20dp"
+            android:textColor="#a6d8d4"
+            />
+
+        <Button
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnModifyInfo"
+            android:background="@drawable/bg_btn"
+            android:text="修改邮箱"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            >
+        </Button>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnModifyPwd"
+            android:background="@drawable/bg_btn"
+            android:text="修改密码"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnStatistics"
+            android:background="@drawable/bg_btn"
+            android:text="衣物统计"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnLogOut"
+            android:background="@drawable/bg_btn"
+            android:text="退出登录"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

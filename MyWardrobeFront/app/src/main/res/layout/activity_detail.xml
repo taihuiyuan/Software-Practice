@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#a6d8d4"
+        >
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/back_white">
+        </Button>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="衣物详情"
+                android:textAlignment="center"
+                android:paddingTop="10dp"
+                android:textSize="20dp"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgClothesDetail"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:scaleType="center"
+        android:src="@drawable/image_icon"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        />
+
+    <!--分类板块-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="分类:"
+            android:textSize="18dp">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/spDetailCName"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="right" >
+        <TextView
+            android:id="@+id/addCategoryDetail"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="+新增分类"
+            android:textSize="12dp"
+            android:textColor="#a6d8d4"
+            android:gravity="right">
+        </TextView>
+    </LinearLayout>
+
+    <!--颜色板块-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="颜色:"
+            android:textSize="18dp">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/spDetailColor"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--季节板块-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="季节:"
+            android:textSize="18dp">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/spDetailSeason"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--价格板块-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="价格:"
+            android:textSize="18dp">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="number|numberDecimal"
+                android:layout_marginRight="20dp"
+                android:id="@+id/etDetailPriceNew"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--位置板块-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="位置:"
+            android:textSize="18dp">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/spDetailLocation"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="查看历史位置"
+            android:layout_marginLeft="20dp"
+            android:textColor="#a6d8d4"
+            android:textSize="12dp"
+            android:id="@+id/seeHistoricalLocation"
+            android:clickable="true"
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+            <TextView
+                android:id="@+id/setLocationDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="位置管理"
+                android:textSize="12dp"
+                android:textColor="#a6d8d4"
+                android:clickable="true"
+                android:layout_marginRight="20dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--备注板块-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="备注:"
+            android:textSize="18dp">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etDetailNoteNew"
+                android:layout_marginRight="20dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btModifyDetail"
+        android:text="修改"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_btn"
+        />
+
+
+
+</LinearLayout>

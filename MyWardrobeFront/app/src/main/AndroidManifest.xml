@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:requestLegacyExternalStorage="true"
+    package="com.example.mywardrobe">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyWardrobe"
+        >
+        <activity
+            android:name=".activity.LoginActivity"
+            android:theme="@style/Theme.MyWardrobe"
+
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.UploadActivity"
+            android:theme="@style/Theme.MyWardrobe"
+            >
+        </activity>
+
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:theme="@style/Theme.MyWardrobe"
+            >
+        </activity>
+
+        <activity
+            android:name=".activity.NavbarActivity"
+            android:theme="@style/Theme.MyWardrobe"
+            >
+
+        </activity>
+
+        <activity android:name=".activity.HomeActivity"
+            android:theme="@style/Theme.MyWardrobe"
+            >
+        </activity>
+
+        <activity android:name=".activity.StatisticsActivity"
+            android:theme="@style/Theme.MyWardrobe"
+            >
+        </activity>
+
+        <activity android:name=".activity.OutfitActivity"
+            android:theme="@style/Theme.MyWardrobe"
+
+            >
+
+        </activity>
+
+        <activity android:name=".activity.MineActivity"
+            android:theme="@style/Theme.MyWardrobe"
+            >
+
+        </activity>
+
+        <activity android:name=".activity.ModifyInfoActivity"
+            android:theme="@style/Theme.MyWardrobe"
+            >
+
+        </activity>
+
+        <activity android:name=".activity.ModifyPwdActivity"
+            android:theme="@style/Theme.MyWardrobe"
+            >
+
+        </activity>
+
+        <activity android:name=".activity.ChooseActivity"
+            android:theme="@style/Theme.MyWardrobe"
+            >
+
+        </activity>
+
+        <activity android:name=".activity.OutfitAddActivity"
+            android:theme="@style/Theme.MyWardrobe">
+
+        </activity>
+
+
+        <activity android:name=".activity.OutfitDetailActivity"
+            android:theme="@style/Theme.MyWardrobe">
+        </activity>
+
+        <activity android:name=".activity.ClothesDetailActivity"
+            android:theme="@style/Theme.MyWardrobe"
+            >
+
+        </activity>
+        <activity android:name=".activity.SearchActivity"
+            android:theme="@style/Theme.MyWardrobe"
+            >
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+</manifest>

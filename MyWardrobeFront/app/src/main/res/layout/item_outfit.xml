@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/imgOutfit"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/image_icon"
+                />
+
+            <TextView
+                android:id="@+id/tvOutfitName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="19dp"
+                android:padding="10dp"
+                android:text="穿搭1"
+                android:textColor="#515151"
+                android:textSize="25sp"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right">
+                <Button
+                    android:id="@+id/btnDelete"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/delete_btn"></Button>
+
+                <Button
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/btnList"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/next_btn">
+                </Button>
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
